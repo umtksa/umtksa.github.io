@@ -1,0 +1,94 @@
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>todo</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <script
+    type="text/javascript"
+    src="http://code.jquery.com/jquery-1.11.0.js"
+
+  ></script>
+
+
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css">
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.2/handlebars.min.js"></script>
+      <script type="text/javascript" src="https://chriszarate.github.io/sheetrock/dist/sheetrock.min.js"></script>
+  
+
+  <script type="text/javascript">
+
+
+    $(window).load(function(){
+
+
+var mySpreadsheet = 'https://docs.google.com/spreadsheets/d/11novDKfqn9HxTXlWqJfYpQNp2ntJgWqb44D8hcaMnVo/edit#gid=0';
+
+
+var HRTemplate = Handlebars.compile($('#hr-template').html());
+
+
+$('#hr').sheetrock({
+  url: mySpreadsheet,
+  rowTemplate: HRTemplate
+});
+
+
+    });
+
+</script>
+  <style>
+    .col-md-1 {
+    border-radius:50%;
+      background-color: red;
+      color:white;
+      font-weight:bold;
+      text-align:center;
+      height:8.3vw;
+      padding-top: 65px;
+    }
+   .content-container {
+      margin-top: 10%;
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+
+  </head>
+<body>
+
+
+ 
+   
+<div class="content-container">
+  <div class="card-columns">
+    
+    <div id="hr">
+  <script id="hr-template" type="text/x-handlebars-template"> 
+<div class="card card-outline">
+          <div class="card-header bg-secondary"></div>
+          <div class="card-body">
+            <h5 class="card-title">{{cells.WHERE}}</h5>
+            <p class="card-text">{{cells.LAT}}</p>
+          </div>
+        </div>
+   </script>
+  </div>
+        
+    
+   
+  
+    
+     
+     
+     
+  </div>
+</div>
+
+</body>
+</html>
