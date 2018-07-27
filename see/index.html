@@ -18,7 +18,7 @@
 
 
 		<div id="filters" class="container">
-			<input id="articleSearch" type="text" placeholder="Search for.."></input>
+			<input id="articleSearch" type="text" placeholder=""></input>
 			<span class="clear sml-button">Clear</span>
       <h3>Tags <span id="tags"></span>
     </div>
@@ -39,7 +39,7 @@
 
 	<script id="articleTable" type="text/html">
 		<table>
-			<tr><th class="">Article</th><th>Tags</th></tr>
+			<tr><th class="">Title</th><th>Tags</th></tr>
 		  {{#rows}}
 		  	<tr class="{{rowNumber}}"><td class="article"><a href="{{url}}" target="_blank">{{article}}</a></td>
 		  	<td class="tag">{{#tags}}<a href="#">{{tag}}</a> {{/tags}}</td></tr>
