@@ -1,4 +1,5 @@
-ajax({ url: 'shortcuts://open-shortcut?name=update' }, function(data){
-  var headline = data.match(/<h1>(.*?)<\/h1>/)[1];
-  simply.title(headline);
-});
+simply.on('singleClick', function(e) {
+  if (e.button === 'up') {
+   ajax({ url: 'http://simplyjs.io' }
+  } else if (e.button === 'down') 
+  );
