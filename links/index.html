@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
@@ -10,32 +11,90 @@
 
 
   <META HTTP-EQUIV="refresh" CONTENT="300">
-<style>
-* {
-  box-sizing: border-box;
+  <title>Links</title>
+<link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+
+
+
+  <style>
+      * {
+    box-sizing: border-box;
 }
 
 #myInput {
-  width: 100%;
-  font-size: 16px;
-  padding: 12px 20px 12px 15px;
-  border: 1px solid #ddd;
-  margin-bottom: 12px;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 15px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+}
+
+.hide {
+    display: none;
+}
+
+  </style>
+
+
+
+  <script type="text/javascript">
+
+    window.onload=function(){
+
+// Get the input element
+const input = document.getElementById('myInput')
+// get the list items
+const listItems = document.getElementById('myUL').children
+// create an array of all list items containing an array of all distinct words in the li
+// allowing us not to have to double check the same work against the query
+const listCache = Array.from(listItems) // convert the HTMLCollection to an array
+    .map(li => li.textContent.toLowerCase().split(' ') // map the elements, getting the text, making lit lowercase, and divide the string in to a words array
+        .reduce((arr, txt) => { // reduce the words array
+            const str = txt.trim() // remove an whitespace
+            //if the string length is longer than 0 and does is not already in the array
+            // add it
+            if (str.length > 0 && !arr.includes(str)) arr.push(str)
+            //return the array
+            return arr
+        }, [])
+    )
+// and an event listener for user input to run the search function
+input.addEventListener('input', search)
+
+// handle when there is user input in to the input element
+function search(event) {
+    // get the users inputed text, convert it to lowercase
+    const query = input.value.toLowerCase().split(' ')
+    // go over the cached list items
+    for (let i = 0; i < listCache.length; i++) {
+        const arr = listCache[i] // store a reference to the current iteration
+        // check that ever word in the query is in the list of words
+        const test = query.every((str, i) => {
+            // if the current test query is the last one, assume that it's part of a word
+            const wordMatch = query[i + 1] === undefined ? false : true
+            // if not than match the whole word
+            if (wordMatch) return arr.find(word => word === str)
+            // else search part of the string
+            else return arr.find(word => word.includes(str))
+        })
+        // if match remove hide class
+        if (test) listItems[i].classList.remove('hide')
+        // else hide the element
+        else listItems[i].classList.add('hide')
+    }
 }
 
 
-</style>
+    }
 
-  <title>Links</title>
+</script>
+
 </head>
+<body>
+    <input type="text" id="myInput" placeholder="Search" title="Type in a name">
 
-
-  <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
-  <body>
-  <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search" title="Type in a name">
-
-    <div class="pa3 pa5-ns">
-      <ul id="myUL" class="list pl0 measure center">
+<div class="pa3 pa5-ns">
+    <ul id="myUL" class="list pl0 measure center">
 <li class="lh-copy pv3 ba bl-0 bt-0 br-0 b--dotted b--black-30"> <a class=" near-black link dim f6 b" href="https://www.freecodecamp.org/news/how-to-make-your-html-responsive-by-adding-a-single-line-of-css-2a62de81e431/">Make your HTML responsive</a></li>
 <li class="lh-copy pv3 ba bl-0 bt-0 br-0 b--dotted b--black-30"> <a class=" near-black link dim f6 b" href="https://www.evilsocket.net/2017/12/07/DIY-Portable-Secrets-Manager-with-a-RPI-Zero-and-the-ARC-Project/index.html">Portable Secrets Manager</a></li>
 <li class="lh-copy pv3 ba bl-0 bt-0 br-0 b--dotted b--black-30"> <a class=" near-black link dim f6 b" href="https://proxybay.app/">piratebay</a></li>
@@ -86,25 +145,11 @@
 <li class="lh-copy pv3 ba bl-0 bt-0 br-0 b--dotted b--black-30"> <a class=" near-black link dim f6 b" href="https://zeit.co/">ZEIT</a><dd class="f6 ml0">The Global Serverless Platform</dd></li>
 <li class="lh-copy pv3 ba bl-0 bt-0 br-0 b--dotted b--black-30"> <a class=" near-black link dim f6 b" href="https://www.sohamkamani.com/blog/2016/09/21/making-a-telegram-bot/">sohamkamani </a><dd class="f6 ml0"> how to make and deploy a responsive Telegram bot</dd></li>
 <li class="lh-copy pv3 ba bl-0 bt-0 br-0 b--dotted b--black-30"> <a class=" near-black link dim f6 b" href="https://befonts.com/">Befonts </a><dd class="f6 ml0"> Download free fontsFree Fonts for Creatives</dd></li>
-      </ul>
-    </div>
-    <script>
-    function myFunction() {
-        var input, filter, ul, li, a, i, txtValue;
-        input = document.getElementById("myInput");
-        filter = input.value.toUpperCase();
-        ul = document.getElementById("myUL");
-        li = ul.getElementsByTagName("li");
-        for (i = 0; i < li.length; i++) {
-            a = li[i].getElementsByTagName("a")[0];
-            txtValue = a.textContent || a.innerText;
-            if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                li[i].style.display = "";
-            } else {
-                li[i].style.display = "none";
-            }
-        }
-    }
-    </script>
-  </body>
-</html>
+<li class="lh-copy pv3 ba bl-0 bt-0 br-0 b--dotted b--black-30"> <a class=" near-black link dim f6 b" href="https://pebble.github.io/pebblejs/">pebble jsPebble.js lets you write beautiful Pebble applications completely in JavaScript.</a></li>
+    </ul>
+</div>
+
+
+
+
+</body></html>
