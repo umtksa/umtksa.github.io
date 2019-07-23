@@ -9,4 +9,4 @@ simply.on('singleClick', function(e) {
   localStorage.setItem('count', count);
 });
 
-simply.text({ title: 'Counter', subtitle: count });
+simply.text({ title: 'deneme', subtitle: count });
