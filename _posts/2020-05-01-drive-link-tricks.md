@@ -9,10 +9,9 @@ title: google drive tricks
 
  Export any file with any format
 
-`https://docs.google.com/document/d/DOC_FILE_ID/export?format=pdf
-`
+`https://docs.google.com/document/d/DOC_FILE_ID/export?format=pdf`
+
  The direct link for your drawings SVG, JPG, or PDF file
 
-`https://docs.google.com/drawings/d/FILE_ID/export/svg
-`
+`https://docs.google.com/drawings/d/FILE_ID/export/svg`
 
