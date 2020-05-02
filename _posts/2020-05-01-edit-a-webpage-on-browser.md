@@ -8,4 +8,4 @@ paste the code to console
 ```
 document.body.contentEditable = true
 ```
-edit text on browser
+edit text on browser.
