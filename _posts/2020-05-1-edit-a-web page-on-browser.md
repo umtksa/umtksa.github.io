@@ -3,7 +3,7 @@ layout: post
 title: editing web sites
 description: yo
 summary: editing web sites
-tags: [css]
+tags: [web]
 ---
 
 paste the code to console
