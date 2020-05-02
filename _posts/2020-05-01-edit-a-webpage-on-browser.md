@@ -1,9 +1,6 @@
 ---
 layout: post
-title: editing web sites
-description: yo
-summary: editing web sites
-tags: [web]
+title: editing web pages with browser
 ---
 
 paste the code to console
