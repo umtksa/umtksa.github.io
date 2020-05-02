@@ -1,6 +1,6 @@
 ---
 layout: post
-title: editing web sites
+title: editing web pages with browser
 description: yo
 summary: editing web sites
 tags: [web]
