@@ -3,7 +3,7 @@ layout: post
 title: google drive tricks
 ---
 
-You can view the same document in reader mode
+You can view the document in reader mode
 
 ```https://docs.google.com/spreadsheets/d/SHEET_ID/preview```
 
