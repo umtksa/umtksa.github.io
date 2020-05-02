@@ -36,7 +36,7 @@ plugins:
 
 collections:
   pages:
-    output: false
+    output: true
     permalink: /:name
   posts:
     output: true
