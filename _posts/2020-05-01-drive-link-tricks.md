@@ -12,8 +12,8 @@ https://docs.google.com/spreadsheets/d/SHEET_ID/preview
 https://docs.google.com/document/d/DOC_FILE_ID/export?format=pdf
 
 - The direct link for  SVG or as a PDF file would be:
+svg,pdf or pdf
 
 https://docs.google.com/drawings/d/FILE_ID/export/svg
-https://docs.google.com/drawings/d/FILE_ID/export/pdf
-https://docs.google.com/drawings/d/FILE_ID/export/jpg
+
 
