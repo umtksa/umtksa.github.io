@@ -1,6 +1,6 @@
 ---
 layout: post
-title: google drive tricks
+title: google link tricks
 ---
 
  You can view the document in reader mode without cluster of ui, loads really fast.
@@ -15,3 +15,6 @@ title: google drive tricks
 
 `https://docs.google.com/drawings/d/FILE_ID/export/svg`
 
+Qr code on the fly
+
+`https://chart.googleapis.com/chart?chs=500x500&cht=qr&chld=H&chl=texthere`
