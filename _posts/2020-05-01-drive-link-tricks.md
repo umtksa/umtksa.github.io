@@ -3,7 +3,7 @@ layout: post
 title: google link tricks
 ---
 
-[With this link](https://docs.google.com/spreadsheets/d/SHEET_ID/preview) you can view the document in reader mode without cluster of ui, loads really fast. Just edit the sheet id.
+[With this link](https://docs.google.com/spreadsheets/d/SHEET_ID/preview) you can view the document in reader mode without cluster of ui.
 
 [With this link](https://docs.google.com/document/d/DOC_FILE_ID/export?format=pdf) you can export any file with any format,
 
