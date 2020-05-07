@@ -4,6 +4,8 @@ title: public no auth apis
 published: true
 ---
 A collection of public no auth apis
+[hacker news top stories](https://hacker-news.firebaseio.com/v0/topstories.json?print=pretty){:target="_blank"}
+  - [direct story](https://hacker-news.firebaseio.com/v0/item/23080417.json?print=pretty){:target="_blank"} 
 
 [age from name](https://api.agify.io/?name=astro){:target="_blank"}
 
