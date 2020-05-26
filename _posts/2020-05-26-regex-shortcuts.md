@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Regex snippets to use with siri shortcuts
+title: regex snippets for siri shortcuts
 ---
 date time
 ```
