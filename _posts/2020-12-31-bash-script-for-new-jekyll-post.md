@@ -4,7 +4,7 @@ title: bash script for new jekyll post
 ---
 bash script for new jekyll post
 
-asks for title and generates an md file in _posts folder with proper naming
+asks for title and generates a markdown file in _posts folder with proper naming
 ```
 #!/bin/bash
 
