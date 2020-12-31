@@ -2,7 +2,7 @@
 layout: post
 title: swipe up animation expression for after effects
 ---
-after effects swipe thing
+after effects swipe up expression
 ```
 amp = 30;
 
