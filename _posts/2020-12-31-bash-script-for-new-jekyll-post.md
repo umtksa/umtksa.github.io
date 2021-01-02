@@ -26,7 +26,6 @@ post body" > $filename
 
 open $filename
 killall Terminal
-
 ```
 
 commiting and pushing changes to github
@@ -36,5 +35,4 @@ git add .
 git commit -m "new post"
 git push
 killall Terminal
-
 ```
