@@ -1,6 +1,6 @@
 ---
 layout: post
-title: bash script for new jekyll post
+title: bash script for new jekyll post and git push
 ---
 bash script for new jekyll post
 
@@ -25,5 +25,16 @@ title: $title
 post body" > $filename
 
 open $filename
+killall Terminal
+
+```
+
+commiting and pushing changes to github
+```
+cd /Users/mac/blog.github.io
+git add .
+git commit -m "new post"
+git push
+killall Terminal
 
 ```
