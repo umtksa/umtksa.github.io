@@ -11,7 +11,6 @@ asks for title and generates a markdown file in _posts folder with proper naming
 echo "Post Title: "
 read title
 
-
 ptitle=${title// /-}
 plc=`echo "$ptitle" | tr '[:upper:]' '[:lower:]'`
 pdate=`date +%Y-%m-%d`
@@ -30,6 +29,7 @@ killall Terminal
 
 commiting and pushing changes to github
 ```
+#!/bin/bash
 cd /Users/mac/blog.github.io
 git add .
 git commit -m "new post"
