@@ -10,14 +10,11 @@ layout: null
     "icon": "{{ "/apple-touch-icon.png" | absolute_url }}",
     "favicon": "{{ "/favicon.ico" | absolute_url }}",
     "expired": false,
-    
+
 "items": [
     {% for post in site.posts limit:36 %}
         {
-            "id": "{{ post.url | absolute_url | sha1 }}",
             "title": {{ post.title | jsonify }},
-            "content_text": {{ post.content | strip_html | strip_newlines | jsonify }},
-            "content_html": {{ post.content | strip_newlines | jsonify }},
             "url": "{{ post.url | absolute_url }}",
             "date_published": "{{ post.date | date_to_xmlschema }}",
             "date_modified": "{{ post.date | date_to_xmlschema }}",
