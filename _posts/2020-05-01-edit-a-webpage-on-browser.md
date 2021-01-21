@@ -1,6 +1,6 @@
 ---
 layout: post
-title: editing web pages with browser
+title: editing web pages for screenshots
 ---
 
 paste the code to console
