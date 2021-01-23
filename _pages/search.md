@@ -32,6 +32,11 @@ title: Search
 
 <!-- Script pointing to search-script.js -->
 <script src="/search.js" type="text/javascript"></script>
+<script>
+function setFocusToTextBox(){
+    $("#search-input").focus();
+}
+</script>
 
 <!-- Configuration -->
 <script type="text/javascript">
