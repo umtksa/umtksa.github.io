@@ -1,6 +1,6 @@
 ---
 layout: post
-title: crontab mac usage
+title: crontab mac usage
 ---
 
 edit crontab
