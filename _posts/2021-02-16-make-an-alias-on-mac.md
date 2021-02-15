@@ -6,7 +6,7 @@ Go to your home directory
 ```
 cd && nano .bash_profile
 ```
-In nano <kbd>kntrl</kbd>+<kbd>o</kbd> to write the file out and <kbd>kntrl</kbd>+<kbd>x</kbd> to exit the file.
+In nano kntrl+o to write the file out and kntrl+x to exit the file.
 
 Refresh the shell environment by entering the command below:
 ```
