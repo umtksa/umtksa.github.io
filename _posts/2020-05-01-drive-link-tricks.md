@@ -10,3 +10,5 @@ title: google link tricks
 The direct [link](https://docs.google.com/drawings/d/FILE_ID/export/svg){:target="_blank"} for your drawings SVG, JPG, or PDF file
 
 Qr code on the fly [with this link](https://chart.googleapis.com/chart?chs=500x500&cht=qr&chld=H&chl=texthere){:target="_blank"}
+
+test from github
