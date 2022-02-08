@@ -67,7 +67,9 @@ For sending links from my mobile phone running iOS I'm using [this siri shortcut
 
 Some useful links:
 [github repo](https://github.com/umtksa/links){:target="_blank"}
+
 My theme is based on [this](https://github.com/P0WEX/Gesko){:target="_blank"} theme
+
 [Jekyll documentation](https://jekyllrb.com/docs/continuous-integration/github-actions/){:target="_blank"} about using github actions for jekyll.
 
 peace.
