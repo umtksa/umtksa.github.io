@@ -56,7 +56,14 @@ summary: $sum
 tags: $tags
 ---\n" > $filename
 
-echo "done"
+echo "link created"
+
+cd /Users/mac/Dropbox/links
+git add .
+git commit -m "new link"
+git push
+
+echo "new link posted"
 
 ```
 
