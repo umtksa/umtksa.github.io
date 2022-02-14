@@ -58,7 +58,7 @@ tags: $tags
 
 echo "link created"
 
-cd /Users/mac/Dropbox/links
+cd /Users/mac/links
 git add .
 git commit -m "new link"
 git push
