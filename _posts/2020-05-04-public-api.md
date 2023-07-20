@@ -7,8 +7,6 @@ A collection of public no auth apis
 
 [earth view image api](https://earthview.withgoogle.com/_api/photos.json){:target="_blank"}
 
-[IP geolocation](https://freeipdata.fly.dev/json/1.1.1.1){:target="_blank"}
-
 [Hacker news user api](https://hn.algolia.com/api/v1/users/umtksa){:target="_blank"}
 
 [hacker news top stories](https://hacker-news.firebaseio.com/v0/topstories.json?print=pretty){:target="_blank"}
