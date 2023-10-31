@@ -2,6 +2,12 @@
 layout: post
 title: make an alias on mac
 ---
+
+```
+cd; nano .zshrc
+> alias test="test.sh"
+```
+
 Go to your home directory
 ```
 cd && nano .zshrc
@@ -12,5 +18,9 @@ Refresh the shell environment by entering the command below:
 ```
 source ~/.zshrc
 ```
+
+
+
+
 
 [source](https://coolestguidesontheplanet.com/make-an-alias-in-bash-shell-in-os-x-terminal/){:target=_blank}
